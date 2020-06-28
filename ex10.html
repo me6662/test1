@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title></title>
   </head>
   <body>
@@ -10,34 +10,30 @@
     <script type="text/javascript">
       // c# 의 Dictionary 와 동일
       var chelsea = {
-        "FW":"Oliver Giroud", // Key : value
-        "MF":"Ngolo Kante" // key : 이름 , value : 필드(=프로퍼티 라고함..)며 메소드며 다됨.. 존나 근본없노
+        FW: "Oliver Giroud", // Key : value
+        MF: "Ngolo Kante", // key : 이름 , value : 필드(=프로퍼티 라고함..)며 메소드며 다됨.. 존나 근본없노
       };
-      document.write("FW : "+ chelsea.FW + "<br>");
-      document.write("MF : "+ chelsea.MF + "<br>");
+      document.write("FW : " + chelsea.FW + "<br>");
+      document.write("MF : " + chelsea.MF + "<br>");
       chelsea.DF = "Marcos Alonso";
-      document.write("DF : "+ chelsea.DF + "<br>");
+      document.write("DF : " + chelsea.DF + "<br>");
       chelsea.GK = "Kepa Arrizabalaga";
-      document.write("GK : "+ chelsea.GK + "<br>");
+      document.write("GK : " + chelsea.GK + "<br>");
     </script>
     <h2>Iterate</h2>
     <script type="text/javascript">
-      for(var key in chelsea)
-      {
-        document.write(key+ " : "+ chelsea[key] + "<br>");
+      for (var key in chelsea) {
+        document.write(key + " : " + chelsea[key] + "<br>");
       }
     </script>
     <h2>Property & Method</h2>
     <script type="text/javascript">
-      chelsea.showAll = function ()
-      {
-        for(var key in this)
-        {
-          document.write(key+ " : "+ this[key] + "<br>");
+      chelsea.showAll = function () {
+        for (var key in this) {
+          document.write(key + " : " + this[key] + "<br>");
         }
-      }
+      };
       chelsea.showAll();
     </script>
-
   </body>
 </html>
